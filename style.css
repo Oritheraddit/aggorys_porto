@@ -11,7 +11,7 @@
   --accent-color: #ff6f61;
   --border-radius: 1rem;
   --max-width: 1000px;
-  --font-family: Arial, Helvetica, sans-serif;;
+  --font-family: "Space Mono", monospace;
   text-align: center;
 }
 
@@ -54,6 +54,15 @@ a {
   text-decoration: none;
 }
 
+.navbar {
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+
 .navbar a:hover {
   color: var(--accent-color);
 }
@@ -75,24 +84,17 @@ a {
   background-color: var(--secondary-color);
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
 .hero {
   padding: 4rem 0;
   text-align: center;
 }
 
-.hero h1 {
+.hero_h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   margin-bottom: 1rem;
 }
 
-.hero p {
+.hero_p {
   max-width: 720px;
   margin: 0 auto 1.5rem;
   color: #555555;
