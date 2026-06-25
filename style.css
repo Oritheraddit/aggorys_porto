@@ -45,16 +45,14 @@ a{
 
 .navbar {
   margin: 0;
-  padding: 0px 40px;
+  padding: 0 0;
   display: flex;
-  align-items: center;
-  background-color: var(--bg-color);
   position: fixed;
   width: 100%;
   z-index: 100;
 }
 .navmini{
-  display: inline-block;
+  display: inline-block
 }
 .navbar a:hover {
   color: var(--accent-color);
@@ -74,6 +72,10 @@ a{
   max-width: 720px;
   margin: 0 auto 1.5rem;
   color: var(--secondary-color);
+}
+
+.skill_div{
+  column-count: 2;
 }
 
 #contact {
