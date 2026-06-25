@@ -1,7 +1,3 @@
-/* design.css
-   Link this file from your HTML head:
-   <link rel="stylesheet" href="design.css">
-*/
 
 :root {
   --bg-color: #182216;
@@ -17,13 +13,20 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 12px;
   padding: 5px;
 }
 
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+}
+
+h2{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  text-align: center;
 }
 
 body {
@@ -34,134 +37,45 @@ body {
   min-height: 100vh;
 }
 
-img,
-picture,
-video,
-svg {
-  max-width: 100%;
-  display: block;
-}
-
-button,
-input,
-textarea,
-select {
-  font: inherit;
-}
-
-a {
+a{
   color: inherit;
   text-decoration: none;
 }
 
+
 .navbar {
-  padding: 18px 40px;
+  margin: 0;
+  padding: 0px 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: var(--bg-color);
   position: fixed;
-  padding-left: 0;
-  grid-column: 1;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
 }
-
+.navmini{
+  display: inline-block;
+}
 .navbar a:hover {
   color: var(--accent-color);
 }
 
-.navmini{
-  display: inline-block;
-}
-
-.container {
-  width: min(100%, var(--max-width));
-  margin: 0 auto;
-  padding: 0 1.25rem;
-}
-
-.header,
-.footer,
-.main {
-  width: 100%;
-}
-
-.header {
-  padding: 4rem 0;
-  background-color: var(--secondary-color);
-}
 
 .hero {
   padding: 4rem 0;
   text-align: center;
 }
-
 .hero_h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp( 5rem, 5vw, 6rem);
   margin-bottom: 1rem;
+  color: var(--accent-color);
 }
-
 .hero_p {
   max-width: 720px;
   margin: 0 auto 1.5rem;
   color: var(--secondary-color);
 }
 
-.section {
-  padding: 3rem;
-}
-
-.section-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.grid-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.card {
-  background-color: var(--bg-color);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.95rem 1.5rem;
-  border-radius: var(--border-radius);
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.button:hover {
-  background-color: var(--accent-color);
-}
-
-.footer {
-  padding: 2rem 0;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+#contact {
   text-align: center;
-}
-
-@media (max-width: 900px) {
-  .grid-3 {
-    grid-template-columns: 1fr;
-  }
-  .navbar {
-    flex-wrap: wrap;
-  }
 }
