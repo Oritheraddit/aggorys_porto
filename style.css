@@ -6,12 +6,12 @@
 :root {
   --bg-color: #dab199;
   --text-color: #222222;
-  --primary-color: #4a90e2;
+  --primary-color: #f59629;
   --secondary-color: #ffffff;
   --accent-color: #ff6f61;
   --border-radius: 1rem;
   --max-width: 1000px;
-  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-family: Arial, Helvetica, sans-serif;;
   text-align: center;
 }
 
