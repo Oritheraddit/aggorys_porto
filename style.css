@@ -119,7 +119,7 @@ footer {
   position: relative;
   left: 0;
   width: 100%;
-  height: 2rem;
+  height: 1rem;
   background-color: var(--strong-orange);
   color: var(--strong-orange);
   z-index: -1;
