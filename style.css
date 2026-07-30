@@ -126,10 +126,30 @@ footer {
 }
 
 .skill_div{
-  column-count: 2;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
   text-align: center;
+}
+
+.skill_group {
+  min-width: 220px;
+}
+
+.skill_group h3,
+.skill_group ul {
+  margin: 0 auto 0.5rem;
+}
+
+.skill_group ul {
+  padding: 0;
+}
+
+.skill_group li {
+  margin: 0;
+  padding: 0;
 }
 
 #contact {
