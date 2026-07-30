@@ -129,6 +129,7 @@ footer {
   column-count: 2;
   display: flex;
   flex-wrap: wrap;
+  align-self: center;
 }
 
 #contact {
