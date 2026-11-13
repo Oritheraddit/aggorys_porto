@@ -155,3 +155,15 @@ footer {
 #contact {
   text-align: center;
 }
+
+.fade-element {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-element.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
